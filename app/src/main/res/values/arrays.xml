@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="hotels_array">
+        <item>Selecciona...</item>
+        <item>Hotels</item>
+        <item>2 Estrelles</item>
+        <item>3 Estrelles</item>
+        <item>4 Estrelles</item>
+        <!-- Agrega más elementos según sea necesario -->
+    </array>
+</resources>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".Hotels3"
+    android:background="#E0E0E0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Titul"
+            android:text="3 Estrellas"
+            android:textAlignment="center"
+            ></TextView>
+        <!-- Spinner -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Titul"
+            android:layout_alignRight="@+id/Titul"/>
+
+        <!-- Hotel 1 -->
+        <ImageView
+            android:id="@+id/hotelImage1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/spinner"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/hotelName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hotelImage1"
+            android:text="Hotel Granollers"
+            android:layout_below="@id/spinner"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/maps"
+            android:contentDescription="Maps"
+            android:layout_below="@id/hotelName1"
+            android:layout_toRightOf="@id/hotelImage1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/maps1" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/web"
+            android:contentDescription="Web"
+            android:layout_below="@id/hotelName1"
+            android:layout_toRightOf="@id/tel1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/web1" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/telefono"
+            android:contentDescription="Reproducir"
+            android:layout_below="@id/hotelName1"
+            android:layout_toRightOf="@id/maps1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tel1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3,9"
+            android:layout_below="@id/hotelName1"
+            android:layout_toRightOf="@id/web1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Valor1"/>
+        <ImageView
+            android:id="@+id/imageStar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/estrella"
+            android:layout_below="@id/hotelName1"
+            android:layout_toRightOf="@id/Valor1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"/>
+        <!-- Hotel 2 -->
+        <ImageView
+            android:id="@+id/hotelImage2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/hotelImage1"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/hotelName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hotelImage2"
+            android:text="Hotel Iris Granollers"
+            android:layout_below="@id/maps1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/maps"
+            android:contentDescription="Maps"
+            android:layout_below="@id/hotelName2"
+            android:layout_toRightOf="@id/hotelImage2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/maps2" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/web"
+            android:contentDescription="Web"
+            android:layout_below="@id/hotelName2"
+            android:layout_toRightOf="@id/tel2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/web2" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/telefono"
+            android:contentDescription="Reproducir"
+            android:layout_below="@id/hotelName2"
+            android:layout_toRightOf="@id/maps2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tel2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4,0"
+            android:layout_below="@id/hotelName2"
+            android:layout_toRightOf="@id/web2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Valor2"/>
+        <ImageView
+            android:id="@+id/imageStar2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/estrella"
+            android:layout_below="@id/hotelName2"
+            android:layout_toRightOf="@id/Valor2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Hotel 3 -->
+        <ImageView
+            android:id="@+id/hotelImage3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/hotelImage2"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/hotelName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hotelImage3"
+            android:text="Fonda Europa de Granollers"
+            android:layout_below="@id/tel2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4,3"
+            android:layout_below="@id/hotelName3"
+            android:layout_toRightOf="@id/web3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Valor3"/>
+        <ImageView
+            android:id="@+id/imageStar1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/estrella"
+            android:layout_below="@id/hotelName3"
+            android:layout_toRightOf="@id/Valor3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"/>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/maps"
+            android:contentDescription="Maps"
+            android:layout_below="@id/hotelName3"
+            android:layout_toRightOf="@id/hotelImage3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/maps3" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/web"
+            android:contentDescription="Web"
+            android:layout_below="@id/hotelName3"
+            android:layout_toRightOf="@id/tel3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/web3" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/telefono"
+            android:contentDescription="Reproducir"
+            android:layout_below="@id/hotelName3"
+            android:layout_toRightOf="@id/maps3"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tel3" />
+
+        <!-- Hotel 3 -->
+        <ImageView
+            android:id="@+id/hotelImage4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/hotelImage3"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/hotelName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/hotelImage3"
+            android:text="Holiday Inn Express Barcelona"
+            android:layout_below="@id/tel3"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/maps"
+            android:contentDescription="Maps"
+            android:layout_below="@id/hotelName4"
+            android:layout_toRightOf="@id/hotelImage4"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/maps4" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/web"
+            android:contentDescription="Web"
+            android:layout_below="@id/hotelName4"
+            android:layout_toRightOf="@id/tel4"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/web4" />
+
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/telefono"
+            android:contentDescription="Reproducir"
+            android:layout_below="@id/hotelName4"
+            android:layout_toRightOf="@id/maps4"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tel4" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4,0"
+            android:layout_below="@id/hotelName4"
+            android:layout_toRightOf="@id/web4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/Valor4"/>
+        <ImageView
+            android:id="@+id/imageStar4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/estrella"
+            android:layout_below="@id/hotelName4"
+            android:layout_toRightOf="@id/Valor4"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+</ScrollView>

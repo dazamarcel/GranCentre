@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/colorFondo</item>
+        <item name="android:textViewStyle">@style/TextoNegrita</item>
+    </style>
+    <style name="TextoNegrita">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>

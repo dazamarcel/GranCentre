@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="12dp"
+    tools:context=".Movies"
+    android:background="#E0E0E0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:text="MOVIES"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Five Nights at Freddy's"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:id="@+id/textTitle"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1h 50min"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/textTitle"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/peli1"
+                android:layout_below="@id/textTitle"
+                android:layout_marginTop="16dp"
+                android:id="@+id/imagePoster"/>
+
+            <!-- Descripción de la película -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basado en el popular videojuego de terror, un hombre comienza un trabajo como guardia de seguridad nocturno en el restaurante Freddy Fazbear's Pizza, donde descubre que los animatrónicos se mueven por la noche y matan a cualquiera que vean."
+                android:layout_below="@id/imagePoster"
+                android:layout_marginTop="16dp"
+                android:id="@+id/textDescription"
+                android:textColor="@color/black"
+                android:textSize="10dp"/>
+
+            <!-- Botones -->
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/play"
+                android:contentDescription="Horario"
+                android:layout_below="@id/textDescription"
+                android:id="@+id/b1" />
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/horario"
+                android:contentDescription="Reproducir"
+                android:layout_below="@id/textDescription"
+                android:layout_toRightOf="@id/b1"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/b2" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black Friday ('Thanksgiving')"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:id="@+id/textTitle1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1h 47min"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/textTitle1"
+                android:textSize="15sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/peli2"
+                android:layout_below="@id/textTitle1"
+                android:layout_marginTop="16dp"
+                android:id="@+id/imagePoster1"/>
+
+            <!-- Descripción de la película -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tras un Black Friday en el que se producen disturbios que acaban en tragedia, un misterioso asesino inspirado por la festividad de Acción de Gracias aterroriza Plymouth, en Massachusetts –lugar de origen de la tristemente célebre festividad."
+                android:layout_below="@id/imagePoster1"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/black"
+                android:id="@+id/textDescription1"
+                android:textSize="10dp"/>
+
+            <!-- Botones -->
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/play"
+                android:contentDescription="Horario"
+                android:layout_below="@id/textDescription1"
+                android:id="@+id/b3" />
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/horario"
+                android:contentDescription="Reproducir"
+                android:layout_below="@id/textDescription1"
+                android:layout_toRightOf="@id/b3"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/b4" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="El Exorcista: Creyente"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:id="@+id/textTitle2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1h 50min"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/textTitle2"
+                android:textSize="15sp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/peli3"
+                android:layout_below="@id/textTitle2"
+                android:layout_marginTop="16dp"
+                android:id="@+id/imagePoster2"/>
+
+            <!-- Descripción de la película -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Después de la pérdida de su esposa en el terremoto de Haití, Victor Fielding cuida de su hija Angela y su amiga Katherine. Cuando las chicas desaparecen en un bosque durante tres días y regresan sin memoria, Victor busca ayuda de Chris MacNeil para enfrentar eventos desconcertantes. La trama se enfoca en la pérdida y el misterio, explorando fuerzas oscuras."
+                android:layout_below="@id/imagePoster2"
+                android:layout_marginTop="16dp"
+                android:id="@+id/textDescription2"
+                android:textColor="@color/black"
+                android:textSize="10dp"/>
+
+            <!-- Botones -->
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/play"
+                android:contentDescription="Horario"
+                android:layout_below="@id/textDescription2"
+                android:id="@+id/b5" />
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/horario"
+                android:contentDescription="Reproducir"
+                android:layout_below="@id/textDescription2"
+                android:layout_toRightOf="@id/b5"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/b6" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
